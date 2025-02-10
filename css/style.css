@@ -237,7 +237,7 @@ section.count-down .count-down__div--clock .box.seg {
   font-weight: bold;
   display: flex;
   align-items: center;
-  width: 180px;
+  max-width: 280px;
 }
 .locations__button--container {
   display: flex;
