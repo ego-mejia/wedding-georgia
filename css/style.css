@@ -13,29 +13,41 @@ html {
 }
 
 section.hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../imgs/hero1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0 auto;
+  position: relative;
   width: 100%;
   min-height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
+  overflow: hidden;
 }
-section.hero .hero__div--wedding-announcement {
+section.hero .hero__img {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+section.hero .hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); /* Degradado oscuro */
+  z-index: 0;
+}
+section.hero .hero__div--wedding-announcement {
+  position: relative;
+  z-index: 1;
 }
 section.hero .hero__div--wedding-announcement .hero__div--date {
+  max-width: 200px;
+  margin: 0 auto;
   padding: 8px 18px;
   border: 1px solid white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);

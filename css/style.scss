@@ -71,55 +71,113 @@ html{
     background-color: $--fourth-color;
 }
 
-
 section {
     &.hero {
-        // background: linear-gradient($--bg-gradient-dark, $--bg-gradient-dark), $--bg-image;
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../imgs/hero1.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin: 0 auto;
+      position: relative;
+      width: 100%;
+      min-height: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden; // Evitar que la imagen se desborde
+  
+      .hero__img {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        min-height: 700px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+  
+      .hero__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); /* Degradado oscuro */
+        z-index: 0;
+      }
+  
+      .hero__div--wedding-announcement {
         position: relative;
-
-
-        .hero__div--wedding-announcement {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-            .hero__div--date {
-                padding: 8px 18px;
-                border: 1px solid $--base-color;
-                text-shadow: 1px 1px 2px $--shadow-color; // Para sombra de texto
-                box-shadow: 1px 1px 2px $--shadow-color; // Sombra del borde
-            }
+        z-index: 1;
+  
+        .hero__div--date {
+            max-width: 200px;
+            margin: 0 auto;
+          padding: 8px 18px;
+          border: 1px solid $--base-color;
+          text-shadow: 1px 1px 2px $--shadow-color;
+          box-shadow: 1px 1px 2px $--shadow-color;
         }
-
-        h1 {
-            font-size: 80px;
-            @include hero-text; 
-        }
-        
-        h4 {
-            font-size: 28px;
-            @include hero-text;
-            letter-spacing: 8px;
-            font-weight: 300;
-
-        }
+      }
+  
+      h1 {
+        font-size: 80px;
+        @include hero-text;
+      }
+  
+      h4 {
+        font-size: 28px;
+        @include hero-text;
+        letter-spacing: 8px;
+        font-weight: 300;
+      }
     }
-}
+  }
+  
+// section {
+//     &.hero {
+//         // background: linear-gradient($--bg-gradient-dark, $--bg-gradient-dark), $--bg-image;
+//         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../imgs/hero1.jpg');
+//         background-size: cover;
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         margin: 0 auto;
+//         width: 100%;
+//         min-height: 700px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         text-align: center;
+//         position: relative;
+
+
+//         .hero__div--wedding-announcement {
+//             position: absolute;
+//             width: 100%;
+//             height: 100%;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             align-items: center;
+            
+//             .hero__div--date {
+//                 padding: 8px 18px;
+//                 border: 1px solid $--base-color;
+//                 text-shadow: 1px 1px 2px $--shadow-color; // Para sombra de texto
+//                 box-shadow: 1px 1px 2px $--shadow-color; // Sombra del borde
+//             }
+//         }
+
+//         h1 {
+//             font-size: 80px;
+//             @include hero-text; 
+//         }
+        
+//         h4 {
+//             font-size: 28px;
+//             @include hero-text;
+//             letter-spacing: 8px;
+//             font-weight: 300;
+
+//         }
+//     }
+// }
 header.sticky {
     background-color: rgba(148, 106, 90,0.85);/* Fondo con 50% de opacidad */
 
