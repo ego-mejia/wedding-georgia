@@ -74,7 +74,8 @@ html{
 
 section {
     &.hero {
-        background: linear-gradient($--bg-gradient-dark, $--bg-gradient-dark), $--bg-image;
+        // background: linear-gradient($--bg-gradient-dark, $--bg-gradient-dark), $--bg-image;
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../imgs/hero1.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
