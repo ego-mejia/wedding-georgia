@@ -66,6 +66,7 @@ section.hero h4 {
   font-weight: 300;
 }
 
+/* Estilos para el botón hamburguesa */
 header.sticky {
   background-color: rgba(148, 106, 90, 0.85); /* Fondo con 50% de opacidad */
 }
@@ -86,7 +87,7 @@ header .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1000px;
+  max-width: 1100px;
   width: 100%;
 }
 header .navbar .navbar__div--left .navbar__div--left--logo {
@@ -96,9 +97,10 @@ header .navbar .navbar__div--right {
   display: flex;
   margin: 0 auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   justify-content: space-between;
   letter-spacing: 2px;
+  gap: 5px;
 }
 header .navbar a {
   text-decoration: none;

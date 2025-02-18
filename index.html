@@ -44,18 +44,39 @@
           />
         </div>
 
-        <div class="navbar__div--right">
+        <!-- <div class="navbar__div--right">
           <a href="">NOS CASAMOS</a>
           <a href="">CUÁNDO Y DÓNDE</a>
           <a href="">CODIGO DE VESTIMENTA</a>
           <a href="">ITINERARIO</a>
         </div>
+      </div> -->
+        <!-- Botón de menú hamburguesa -->
+        <!-- <button class="navbar__toggle" id="menuToggle">☰</button> -->
+
+        <!-- Menú normal (para pantallas grandes) -->
+        <div class="navbar__div--right">
+          <a href="#inicio">INICIO</a>
+          <a href="#historia">NOS CASAMOS</a>
+          <a href="#cuando-donde">CUÁNDO Y DÓNDE</a>
+          <a href="#vestimenta">CÓDIGO DE VESTIMENTA</a>
+          <a href="#itinerario">ITINERARIO</a>
+        </div>
       </div>
+
+      <!-- Menú hamburguesa (para móviles) -->
+      <!-- <div class="navbar__menu" id="menu">
+        <a href="#inicio">INICIO</a>
+        <a href="#historia">NOS CASAMOS</a>
+        <a href="#cuando-donde">CUÁNDO Y DÓNDE</a>
+        <a href="#vestimenta">CÓDIGO DE VESTIMENTA</a>
+        <a href="#itinerario">ITINERARIO</a>
+      </div> -->
     </header>
     <!-- end of Navbar -->
 
     <!-- Couple intro words -->
-    <section class="story">
+    <section class="story" id="historia">
       <div class="story__callout">
         <div class="story__callout--div-title">
           <h2>Nuestra Historia</h2>
@@ -102,7 +123,7 @@
     <!-- end count-down-section -->
 
     <!-- Wedding locations -->
-    <section class="locations">
+    <section class="locations" id="cuando-donde">
       <!-- 650x800
         iamgenes 400 ancho -->
       <div class="locations__furnicular-img">
@@ -198,23 +219,27 @@
     <!-- End of wedding locations -->
 
     <!-- Dressing code  -->
-    <section class="dressing-code">
+    <section class="dressing-code" id="vestimenta">
       <div class="dressing-code__text">
         <h2>Código de Vestimenta</h2>
 
         <div class="dressing-code__text--container">
-          <p class="genre">Hombres:</p>
+          <!-- <p class="genre">Hombres:</p> -->
           <p>
-            Camisa, cualquier color en manga larga, traje, no azul marino,
-            zapatos formales.
+            Lo más importante para nosotros es su presencia, pero hemos
+            intentado que la fiesta sea hermosa y nos alegraremos de que apoye
+            nuestro código de vestimenta en sus trajes: corbata negra. Vestidos
+            de cóctel de noche para las damas (por favor, no elija colores
+            blancos, rojos o muy brillantes en sus trajes). Traje clásico para
+            los hombres.
           </p>
           <div class="dressing-code__button">
-            <a href="">
+            <a href="https://ru.pinterest.com/pin/299982025197068220/">
               <p>Ver ejemplos</p>
             </a>
           </div>
         </div>
-        <div class="dressing-code__text--container">
+        <!-- <div class="dressing-code__text--container">
           <p class="genre">Mujeres:</p>
           <p>
             Camisa, cualquier color en manga larga, traje, no azul marino,
@@ -222,11 +247,11 @@
             NO NUDDE, tacones abiertos o cerrados.
           </p>
           <div class="dressing-code__button">
-            <a href="">
+            <a href="https://ru.pinterest.com/pin/299982025197068220/">
               <p>Ver ejemplos</p>
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="dressing-code__img-container man">
         <img src="imgs/codigo-hombre.png" alt="codigo-hombre" />
@@ -247,7 +272,7 @@
     <!-- End of Dressing code -->
 
     <!-- Schedule -->
-    <section class="schedule">
+    <section class="schedule" id="itinerario">
       <!-- First row start -->
       <div class="row">
         <div class="schedule__textbox--left">
