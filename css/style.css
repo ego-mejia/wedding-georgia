@@ -90,8 +90,18 @@ header .navbar {
   max-width: 1100px;
   width: 100%;
 }
+@media only screen and (max-width: 768px) {
+  header .navbar {
+    height: 80px;
+  }
+}
 header .navbar .navbar__div--left .navbar__div--left--logo {
   width: 50px;
+}
+@media only screen and (max-width: 768px) {
+  header .navbar .navbar__div--left .navbar__div--left--logo {
+    width: 35px;
+  }
 }
 header .navbar .navbar__div--right {
   display: flex;
@@ -101,8 +111,14 @@ header .navbar .navbar__div--right {
   justify-content: space-between;
   letter-spacing: 2px;
   gap: 5px;
+  text-align: center;
 }
-header .navbar a {
+@media only screen and (max-width: 768px) {
+  header .navbar .navbar__div--right {
+    display: none;
+  }
+}
+header .navbar .navbar__div--right a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;

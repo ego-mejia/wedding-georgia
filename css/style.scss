@@ -250,9 +250,15 @@ header{
         align-items: center;
         max-width: 1100px;
         width: 100%;
+        @media only screen and (max-width: $tablet) {
+            height: 80px;
+        }
         .navbar__div--left{
             .navbar__div--left--logo{
                 width: 50px;
+                @media only screen and (max-width: $tablet) {
+                    width: 35px;
+                }
             }
         }
         .navbar__div--right{
@@ -262,10 +268,16 @@ header{
             max-width: 900px;
             justify-content: space-between;
             letter-spacing: 2px;
-            gap: 5px
-        }
-        a {
-            @include navbar-text;
+            gap: 5px;
+            text-align: center;
+            
+            @media only screen and (max-width: $tablet) {
+                display: none;
+            }
+            
+            a{
+                @include navbar-text;
+            }
         }
     }
 }
