@@ -113,11 +113,21 @@ section.story {
   justify-content: center;
   padding: 20px 48px;
 }
+@media only screen and (max-width: 992px) {
+  section.story {
+    padding: 20px 10px;
+  }
+}
 section.story .story__callout {
   background-color: #9A7A54;
   padding: 50px;
   align-items: center;
   text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  section.story .story__callout {
+    padding: 20px;
+  }
 }
 section.story .story__callout .story__callout--div-title {
   padding: 25px;
@@ -144,10 +154,25 @@ section.count-down {
   min-height: 450px;
   height: auto;
 }
+@media only screen and (max-width: 768px) {
+  section.count-down {
+    min-height: 350px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  section.count-down {
+    min-height: 250px;
+  }
+}
 section.count-down h2 {
   font-size: 72px;
   font-weight: bold;
   color: #9A7A54;
+}
+@media only screen and (max-width: 480px) {
+  section.count-down h2 {
+    font-size: 55px;
+  }
 }
 section.count-down .std-date {
   font-size: 36px;
@@ -199,8 +224,20 @@ section.count-down .count-down__div--clock .box.seg {
   margin: 0 auto;
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 480px) {
+  .locations {
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 25px;
+  }
+}
 .locations__furnicular-img {
   width: 40%;
+}
+@media only screen and (max-width: 480px) {
+  .locations__furnicular-img {
+    width: 100%;
+  }
 }
 .locations__furnicular-img img {
   width: 100%;
@@ -213,6 +250,12 @@ section.count-down .count-down__div--clock .box.seg {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  .locations__information {
+    width: 100%;
+  }
 }
 .locations__information h2 {
   color: #818181;
@@ -276,6 +319,18 @@ section.dressing-code {
   align-items: stretch;
   color: white;
 }
+@media only screen and (max-width: 1050px) {
+  section.dressing-code {
+    padding: 10px 0;
+    padding-left: 25px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  section.dressing-code {
+    padding: 10px 10px;
+    flex-direction: column;
+  }
+}
 section.dressing-code .dressing-code__text {
   background-color: #9A7A54;
   border: 5px solid rgb(148, 106, 90);
@@ -318,11 +373,26 @@ section.dressing-code .dressing-code__text .dressing-code__button a {
   color: white;
   font-size: 18px;
 }
+section.dressing-code .dressing-code__container {
+  display: flex;
+  flex-direction: row;
+  min-height: 650px;
+}
+@media only screen and (max-width: 1050px) {
+  section.dressing-code .dressing-code__img-container {
+    padding: 0;
+  }
+}
 section.dressing-code .dressing-code__img-container.man {
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 0 25px;
+}
+@media only screen and (max-width: 992px) {
+  section.dressing-code .dressing-code__img-container.man {
+    display: none;
+  }
 }
 section.dressing-code .dressing-code__img-container.woman {
   display: flex;
@@ -330,10 +400,33 @@ section.dressing-code .dressing-code__img-container.woman {
   width: 100%;
   padding: 0 25px;
 }
+@media only screen and (max-width: 992px) {
+  section.dressing-code .dressing-code__img-container.woman {
+    display: none;
+  }
+}
 section.dressing-code .dressing-code__img-container img {
   border: 3px solid rgba(0, 0, 0, 0.05);
   width: 100%;
   height: auto;
+}
+@media only screen and (max-width: 992px) {
+  section.dressing-code .dressing-code__img-container img {
+    width: 100%;
+    display: inline;
+  }
+}
+section.dressing-code .dressing-code__img-container--row {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  section.dressing-code .dressing-code__img-container--row {
+    display: flex;
+    flex-direction: row;
+  }
+}
+section.dressing-code .dressing-code__img-container--row .img {
+  width: 100%;
 }
 
 section.schedule svg {
@@ -354,10 +447,20 @@ section.schedule .row .schedule__textbox--left {
   text-align: end;
   width: 100%;
 }
+@media only screen and (max-width: 480px) {
+  section.schedule .row .schedule__textbox--left {
+    padding-right: 15px;
+  }
+}
 section.schedule .row .schedule__textbox--left h3 {
   color: #9A7A54;
   font-size: 35px;
   font-weight: bold;
+}
+@media only screen and (max-width: 480px) {
+  section.schedule .row .schedule__textbox--left h3 {
+    font-size: 25px;
+  }
 }
 section.schedule .row .schedule__textbox--left span {
   color: #C1AE90;
@@ -370,15 +473,30 @@ section.schedule .row .schedule__textbox--left p {
   font-size: 25px;
   margin-bottom: 15px;
 }
+@media only screen and (max-width: 480px) {
+  section.schedule .row .schedule__textbox--left p {
+    font-size: 18px;
+  }
+}
 section.schedule .row .schedule__textbox--right {
   text-align: start;
   padding-left: 45px;
   width: 100%;
 }
+@media only screen and (max-width: 480px) {
+  section.schedule .row .schedule__textbox--right {
+    padding-left: 15px;
+  }
+}
 section.schedule .row .schedule__textbox--right h3 {
   color: #9A7A54;
   font-size: 35px;
   font-weight: bold;
+}
+@media only screen and (max-width: 480px) {
+  section.schedule .row .schedule__textbox--right h3 {
+    font-size: 25px;
+  }
 }
 section.schedule .row .schedule__textbox--right span {
   color: #C1AE90;
@@ -390,6 +508,11 @@ section.schedule .row .schedule__textbox--right p {
   color: #818181;
   font-size: 25px;
   margin-bottom: 15px;
+}
+@media only screen and (max-width: 480px) {
+  section.schedule .row .schedule__textbox--right p {
+    font-size: 18px;
+  }
 }
 
 .carrete-container {
