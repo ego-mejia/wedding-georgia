@@ -694,17 +694,22 @@ section{
     height: 500px;
     width: auto;
     flex-shrink: 0;
+    /* Añadir esto para renderizado optimizado */
+    will-change: transform;
+    backface-visibility: hidden;
+    image-rendering: -webkit-optimize-contrast;
 }
-
 /* Animación para mover el carrusel */
+
 @keyframes scroll {
     from {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-100%);
+        transform: translateX(calc(-100% - 1rem)); /* Ajustar margen */
     }
 }
+
 
 
 footer{
